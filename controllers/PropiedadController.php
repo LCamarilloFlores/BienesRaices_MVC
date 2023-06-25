@@ -65,9 +65,7 @@ class PropiedadController{
         $errores = Propiedad::getErrores();
         if($_SERVER['REQUEST_METHOD']==="POST")
     {
-
-        $args=$_POST['propiedad'];
-        $propiedad->sincronizar($args);
+        $propiedad->sincronizar($_POST['propiedad']);
         // echo '<pre>';
         // echo var_dump($_POST);
         // echo '</pre>';
@@ -76,7 +74,6 @@ class PropiedadController{
         // echo '</pre>';
         //  var_dump($imagen);
         // exit;
-        
         $errores = $propiedad->validar();
         
         $nombreImagen=md5(uniqid(rand(),true)) .".jpg";
