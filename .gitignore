@@ -1,0 +1,11 @@
+src/
+node_modules/
+vendor/
+.DS_Store
+iniciar.bat
+includes/.env
+db/
+gulpfile.js
+package.json
+package-lock.json
+.env

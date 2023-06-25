@@ -1,0 +1,21 @@
+{
+    "name": "luisito/portafolio",
+    "description": "Creando un proyecto con POO",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Luis Alberto Camarillo Flores"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.7",
+        "phpmailer/phpmailer": "^6.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Models\\": "./models",
+            "Controllers\\": "./controllers",
+            "MVC\\": "./"
+        }
+    }
+}
