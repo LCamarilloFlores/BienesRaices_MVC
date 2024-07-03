@@ -10,4 +10,5 @@ $db = conectarDB();
 
 //Conectamos a la base de datos
 use Models\ActiveRecord;
+
 ActiveRecord::setDB($db);
