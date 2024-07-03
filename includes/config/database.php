@@ -1,14 +1,15 @@
 <?php
 
-function conectarDB() : mysqli {
-    try{
+function conectarDB(): mysqli
+{
+    try {
         $db = new mysqli(
-        $_ENV['DB_HOST'],
-        $_ENV['DB_USER'],
-        $_ENV['DB_PASS'],
-        $_ENV['DB_BD']);
-    }
-    catch(Throwable $error){
+            'srv872.hstgr.io:3306',
+            'u530132658_bienesadmin',
+            'bNLASG0102$',
+            'u530132658_bienesraices'
+        );
+    } catch (Throwable $error) {
         echo 'No se conectó';
         exit;
     }
